@@ -34,3 +34,6 @@ vignettes/*.pdf
 
 # Mac OS folder metadata
 .DS_Store
+
+# Ignore api key
+api-key.R
