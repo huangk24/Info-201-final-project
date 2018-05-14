@@ -1,14 +1,23 @@
 # Info-201-final-project
-Section BD group 2
 
-The raw data is from [IMDB 5000 Movie Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset). 
+## Project Description
+
+For our project, we are using the **IMDB 5000 Movie Dataset** we found on [Kaggle](https://www.kaggle.com). It is a static `csv` file with information of around 5000 movies including their titles, publish years, genres, budgets, profits and so on. Bill collected this data after a search online brought him to the database.
+
+Our target audience includes interested movie goers and television watchers. The target audience we will hone in on is primarily a user that is familiar with IMDb and Facebook, the sites from which the data base was collected. They will be familiar not only with the content analyzed (movies and television), but familiar with further information on the production and reception of media, such as the number of critical reviews a movie earns.
+
+Three questions we intend to answer for our users:
+
+1) Does popularity attract critics? We will analyze the relationship between the number of Facebook likes a movie's cast has with the number of critical reviews.
+
+2) What types of movies bring in the most viewers? We will look at the relationship between the genres of a movie and its total gross.
+
+3) What do people like to see in movies? We will look at the relationship between the key words associated with a movie and the number of likes garnered by the film in several categories online.
 
 ## Technical Description
 
-For our project, we are using the **IMDB 5000 Movie Dataset** we found on [Kaggle](https://www.kaggle.com). It is a static `csv` file with information of around 5000 movies including their titles, publish years, genres, budgets, profits and so on. 
+We read in the static `.csv` file to read in our data. To reformat the data so it's more friendly, we first checked the accuracy of the data, and *left out columns that are not accurate* (eg. actors and actors Facebook likes). Then, we *rearranged the columns* for convenience so that relevant columns are next to each other. Finally, we *converted "|" seperated list into vectors*, which makes the subsequent data wrangling easier. While doing analysis, what is left to do is **slicing data** and **remove empty string values** indicating data that is not available. The processed movie data is stored in `movie_data.Rda` which contains a dataframe of cleaned movie data.
 
-To reformat the data so it's more friendly, we first checked the accuracy of the data, and *left out columns that are not accurate* (eg. actors and actors facebook likes). Then, we *rearranged the columns* for convenience so that relavent columns are next to each other. Finally, we *converted "|" seperated list into vectors*, which makes the subsequent data wrangling easier. While doing analysis, what is left to do is **slicing data** and **remove empty string values** indicating data that is not available. The processed movie data is stored in `movie_data.Rda` which contains a dataframe of cleaned movie data. 
+The major libraries we are going to use includes `kabble` for rendering table in R markdown, `ggplot2` and `plotly` for charts and data ploting, and `shiny` package for creating a dynamic website.
 
-The major libraries we are going to use includes `kabble` for rendering table in R markdown, `ggplot2` and `plotly` for charts and data ploting, and `shiny` package for creating a dynamic website. 
-
-The challenge we will be facing is how to plot data so that it is intuitive and effective. Organizing the shiny app page content is also a major challenge for us. 
+The challenge we will be facing is how to plot data so that it is intuitive and effective. Organizing the shiny app page content is also a major challenge for us.
