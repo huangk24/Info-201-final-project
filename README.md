@@ -10,9 +10,11 @@ Three questions we intend to answer for our users:
 
 1) Does popularity attract critics? We will analyze the relationship between the number of Facebook likes a movie's cast has with the number of critical reviews.
 
-2) What types of movies bring in the most viewers? We will look at the relationship between the genres of a movie and its total gross.
+2) What types of movies are most popular? We will look at the relationship between the movie genres and the number of movies of each genre produced. 
 
 3) What do people like to see in movies? We will look at the relationship between the key words associated with a movie and the number of likes garnered by the film in several categories online.
+
+
 
 ## Technical Description
 
