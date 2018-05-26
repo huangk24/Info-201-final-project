@@ -5,7 +5,8 @@ load("./movie_data.Rda")
 
 q1_ui <- tabPanel(
   "Profit & Imdb Score",
-  tags$blockquote("TODO: what I observed in this dataset"),
+  tags$blockquote("Does imdb score has relationship with the profit of the
+                  movie?"),
   sidebarLayout(
     sidebarPanel(
       selectInput("color",
