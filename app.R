@@ -10,8 +10,8 @@ source("./scripts/question2.R")
 
 #ui <- navbarPage("Movie Analysis", theme = "style.css", q1_ui, q2_ui)
 
-ui <- navbarPage(theme = shinytheme("flatly"), 
-                 "Movie Analysis", 
+ui <- navbarPage(theme = shinytheme("flatly"),
+                 "Movie Analysis",
                  tags$link(rel = "stylesheet", type = "text/css",
                            href = "style.css"),
                  q1_ui, q2_ui)
