@@ -8,7 +8,7 @@ Our target audience includes interested movie goers and television watchers. The
 
 Three questions we intend to answer for our users:
 
-1) Does popularity attract critics? We will analyze the relationship between the number of Facebook likes a movie's cast has with the number of critical reviews.
+1) Does high Imdb score means the movie is good and low Imdb score means the movie is bad? We will look at the relationship between the Imdb score of the movie and the profit of the movie.
 
 2) What types of movies are most popular? We will look at the relationship between the movie genres and the number of movies of each genre produced. 
 
