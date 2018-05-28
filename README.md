@@ -2,7 +2,7 @@
 
 ## Project Description
 
-For our project, we are using the **IMDB 5000 Movie Dataset** we found on [Kaggle](https://www.kaggle.com). It is a static `csv` file with information of around 5000 movies including their titles, publish years, genres, budgets, profits and so on. Bill collected this data after a search online brought him to the database.
+For our project, we are using the **IMDB 5000 Movie Dataset** we found on [Kaggle](https://www.kaggle.com). It is a static `csv` file with information of around 5000 movies including their titles, publish years, genres, budgets, profits and so on. Bill collected this data after a search online and brought it to the database.
 
 Our target audience includes interested movie goers and television watchers. The target audience we will hone in on is primarily a user that is familiar with IMDb and Facebook, the sites from which the data base was collected. They will be familiar not only with the content analyzed (movies and television), but familiar with further information on the production and reception of media, such as the number of critical reviews a movie earns.
 

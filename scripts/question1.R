@@ -22,7 +22,18 @@ q1_ui <- tabPanel(
         max = 50000, value = 0, step = 1000
       )
     ),
-    mainPanel(plotlyOutput("q1"))
+    mainPanel(
+      plotlyOutput("q1"),
+      tags$div(
+        tags$hr(),
+        p(
+          "From the scatter plot above we can tell there is ",
+          strong("NO"), " real relationship between the Imdb score and",
+          "profit. However, we can conclude that the movie with low ",
+          "Imdb score does less profit."
+        )
+      )
+    )
   )
 )
 
@@ -35,4 +46,3 @@ q1_plot <- function(color_selected, rating, num_voted) {
   p <- plot_ly(data = profit_imdb, x = ~ imdb_score, y = ~ gross)
   p
 }
-
