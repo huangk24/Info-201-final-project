@@ -2,3 +2,6 @@ li:hover {
   background-color: rgb(231, 231, 231);
   transition: 0.5s;
 }
+blockquote {
+  font-size: 14px;
+}
