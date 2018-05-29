@@ -34,4 +34,7 @@ movie_data$num_user_for_reviews <- as.numeric(movie_data$num_user_for_reviews)
 movie_data$num_critic_for_reviews <-
   as.numeric(movie_data$num_critic_for_reviews)
 movie_data$num_voted_users <- as.numeric(movie_data$num_voted_users)
+movie_data$budget <- as.integer(movie_data$budget)
+movie_data$profit <- movie_data$gross - as.integer(movie_data$budget)
 save(movie_data, file = "movie_data.Rda")
+
