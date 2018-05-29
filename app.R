@@ -33,7 +33,7 @@ ui <- navbarPage(
           p(
             "Our target audience includes interested movie goers and ",
             "television watchers. The target audience we will hone in on is ",
-            "primarily a user that is familiar with IMDb and Facebook, the ",
+            "primarily a user that is familiar with IMDB and Facebook, the ",
             "sites from which the data base was collected. They will be ",
             "familiar not only with the content analyzed (movies and ",
             "television), but familiar with further information on the ",
@@ -44,12 +44,12 @@ ui <- navbarPage(
             "Three questions we intend to answer for our users:"
           ),
           p(
-            "1) Does high Imdb score means the movie is good and low Imdb ",
+            "1) Does high IMDB score means the movie is good and low IMDB ",
             "score means the movie is bad? We will look at the relationship ",
-            "between the Imdb score of the movie and the profit of the movie."
+            "between the IMDB score of the movie and the profit of the movie."
           ),
           p(
-            "2) What types of movies are most popular? We will look at the ,",
+            "2) What types of movies are most popular? We will look at the ",
             "relationship between the movie genres and the number of movies of",
             "each genre produced."
           ),

@@ -4,11 +4,11 @@
 
 For our project, we are using the **IMDB 5000 Movie Dataset** we found on [Kaggle](https://www.kaggle.com). It is a static `csv` file with information of around 5000 movies including their titles, publish years, genres, budgets, profits and so on. Bill collected this data after a search online and brought it to the database.
 
-Our target audience includes interested movie goers and television watchers. The target audience we will hone in on is primarily a user that is familiar with IMDb and Facebook, the sites from which the data base was collected. They will be familiar not only with the content analyzed (movies and television), but familiar with further information on the production and reception of media, such as the number of critical reviews a movie earns.
+Our target audience includes interested movie goers and television watchers. The target audience we will hone in on is primarily a user that is familiar with IMDB and Facebook, the sites from which the data base was collected. They will be familiar not only with the content analyzed (movies and television), but familiar with further information on the production and reception of media, such as the number of critical reviews a movie earns.
 
 Three questions we intend to answer for our users:
 
-1) Does high Imdb score means the movie is good and low Imdb score means the movie is bad? We will look at the relationship between the Imdb score of the movie and the profit of the movie.
+1) Does high IMDB score means the movie is good and low IMDB score means the movie is bad? We will look at the relationship between the IMDB score of the movie and the profit of the movie.
 
 2) What types of movies are most popular? We will look at the relationship between the movie genres and the number of movies of each genre produced. 
 
