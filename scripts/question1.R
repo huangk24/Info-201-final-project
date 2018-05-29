@@ -4,10 +4,10 @@ library(plotly)
 load("./movie_data.Rda")
 
 q1_ui <- tabPanel(
-  "Profit & Imdb Score",
+  "Profit & IMDB Score",
   tags$div(
   class = "header1",
-  tags$blockquote("Does imdb score has relationship with the profit of the
+  tags$blockquote("Does IMDB score has relationship with the profit of the
                   movie?")),
   sidebarLayout(
     sidebarPanel(
@@ -32,9 +32,11 @@ q1_ui <- tabPanel(
         class = "summary",
         p(
           "From the scatter plot above we can tell there is ",
-          strong("NO"), " real relationship between the Imdb score and",
+          strong("NO"), " real relationship between the IMDB score and",
           "profit. However, we can conclude that the movie with low ",
-          "Imdb score does less profit."
+          "IMDB score does have less profit. We can also conclude that Black ",
+          "and White movies are generally make less profit compare to Color ",
+          "movies."
         )
       )
     )

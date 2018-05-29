@@ -27,7 +27,7 @@ ui <- navbarPage(
             tags$a(href = "https://www.kaggle.com", "Kaggle"),
             ". It is a static ", code("csv"), " file with information of ",
             "around 5000 movies including their titles, publish years, genres,",
-            " budgets, profits and so on. Bill collected this data after a ",
+            " budgets, profits and so on. Yuxuan collected this data after a ",
             "search online and brought it to the database."
           ),
           p(
@@ -60,35 +60,6 @@ ui <- navbarPage(
             "online."
           ),
           tags$hr()
-        ),
-        tags$div(
-          h3("Technical Description"),
-          p(
-            "We read in the static ", code(".csv"), " file to read in our ",
-            "data. To reformat the data so it's more friendly, we first ",
-            "checked the accuracy of the data, and ",
-            em("left out columns that are not accurate"), "(eg. actors and ",
-            "actors Facebook likes). Then, we ", em("rearranged the columns"),
-            " for convenience so that relevant columns are next to each other.",
-            "Finally, we ", em("converted '|' seperated list into vectors"),
-            ", which makes the subsequent data wrangling easier. While doing ",
-            "analysis, what is left to do is", strong("slicing data"), "and ",
-            strong("remove empty string values"), " indicating data that is ",
-            "not available. The processed movie data is stored in ",
-            code("movie_data.Rda"), " which contains a dataframe of cleaned ",
-            "movie data."
-            ),
-          p(
-            "The major libraries we are going to use includes ", code("kabble"),
-            "for rendering table in R markdown, ", code("ggplot2"), " and ",
-            code("plotly"), " for charts and data ploting, and ", code("shiny"),
-            "package for creating a dynamic website."
-          ),
-          p(
-            "The challenge we will be facing is how to plot data so that it is",
-            "intuitive and effective. Organizing the shiny app page content is",
-            "also a major challenge for us."
-          )
         )
       )
   ), q1_ui, q2_ui)
