@@ -5,8 +5,10 @@ load("./movie_data.Rda")
 
 q1_ui <- tabPanel(
   "Profit & Imdb Score",
+  tags$div(
+  class = "header1",
   tags$blockquote("Does imdb score has relationship with the profit of the
-                  movie?"),
+                  movie?")),
   sidebarLayout(
     sidebarPanel(
       selectInput("color",
@@ -25,7 +27,9 @@ q1_ui <- tabPanel(
     mainPanel(
       plotlyOutput("q1"),
       tags$div(
+        tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
         tags$hr(),
+        class = "summary",
         p(
           "From the scatter plot above we can tell there is ",
           strong("NO"), " real relationship between the Imdb score and",
@@ -42,7 +46,7 @@ q1_plot <- function(color_selected, rating, num_voted) {
     filter(color == color_selected) %>%
     filter(content_rating == rating) %>%
     filter(num_voted_users > num_voted) %>%
-    select(gross, imdb_score)
-  p <- plot_ly(data = profit_imdb, x = ~ imdb_score, y = ~ gross)
+    select(profit, imdb_score)
+  p <- plot_ly(data = profit_imdb, x = ~ imdb_score, y = ~ profit)
   p
 }
