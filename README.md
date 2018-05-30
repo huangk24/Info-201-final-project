@@ -23,3 +23,7 @@ We read in the static `.csv` file to read in our data. To reformat the data so i
 The major libraries we are going to use includes `kabble` for rendering table in R markdown, `ggplot2` and `plotly` for charts and data ploting, and `shiny` package for creating a dynamic website.
 
 The challenge we will be facing is how to plot data so that it is intuitive and effective. Organizing the shiny app page content is also a major challenge for us.
+
+
+
+The link to our app can be found [*here*](https://yuxuan-bill.shinyapps.io/Info-201-final-project/).
