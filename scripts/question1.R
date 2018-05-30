@@ -29,14 +29,14 @@ q1_ui <- tabPanel(
       tags$div(
         tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
         tags$hr(),
-        class = "summary",
+        class = "summary" ,
         p(
           "From the scatter plot above we can tell there is ",
           strong("NO"), " real relationship between the IMDB score and",
           "profit. However, we can conclude that the movie with low ",
-          "IMDB score does have less profit. We can also conclude that Black ",
+         "IMDB score does have less profit. We can also conclude that Black ",
           "and White movies are generally make less profit compare to Color ",
-          "movies."
+         "movies."
         )
       )
     )

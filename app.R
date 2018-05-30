@@ -24,13 +24,13 @@ ui <- navbarPage(
           h3("Project Description"),
           p(
             "For our project, we are using the ",
-            strong("IMDB 5000 Movie Dataset"), " we found on ",
-            tags$a(href = "https://www.kaggle.com", "Kaggle"),
+           strong("IMDB 5000 Movie Dataset"), " we found on ",
+           tags$a(href = "https://www.kaggle.com", "Kaggle"),
             ". It is a static ", code("csv"), " file with information of ",
             "around 5000 movies including their titles, publish years, genres,",
-            " budgets, profits and so on. Yuxuan collected this data after a ",
-            "search online and brought it to the database."
-          ),
+           " budgets, profits and so on. Yuxuan collected this data after a ",
+           "search online and brought it to the database."
+         ),
           p(
             "Our target audience includes interested movie goers and ",
             "television watchers. The target audience we will hone in on is ",
@@ -73,7 +73,12 @@ server <- function(input, output, session) {
       updateCheckboxGroupInput(session, "genre_vector", selected = "")
     }
   })
-  output$q3 <- renderPlot(q3_plot(input$review))
+  output$q3 <- renderPlot({
+    y_value <- movie_data[[input$review]]
+    p3 <- ggplot()+
+      geom_point(mapping = aes(x = movie_data$num_critic_for_reviews, y = y_value))
+    return(p3)
+  })
 }
 
 shinyApp(ui = ui, server = server)
