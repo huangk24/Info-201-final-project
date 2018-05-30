@@ -30,7 +30,8 @@ overview <-
           "television), but with further information on the ",
           "production and reception of media, such as the number of critical ",
           "reviews a movie earns, and typical features on the Imdb website such as ",
-          em("Imdb Score"), "."
+          em("Imdb Score"), ". To explore the site for yourself, visit ",
+          tags$a(href = "https://www.imdb.com/", "Imdb.com"), "."
         ),
         p(
           "Three questions we intend to answer for our users:"

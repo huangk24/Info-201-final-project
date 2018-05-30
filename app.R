@@ -18,7 +18,7 @@ ui <- navbarPage(
       tags$div(
         tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
         h2("Project Overview"),
-        p("Group menber: Haley Buls, Kai Huang, Yuxuan Lu"),
+        p("Group memers: Haley Buls, Kai Huang, Yuxuan Lu"),
         tags$hr()
       ),
       tags$div(
@@ -42,21 +42,20 @@ ui <- navbarPage(
           "production and reception of media, such as the number of critical",
           "reviews a movie earns."
         ),
+        h2("Areas of Interest"),
+        h1("Three questions we intend to answer for our users:"),
         p(
-          "Three questions we intend to answer for our users:"
-        ),
-        p(
-          "1) Does high IMDB score means the movie is good and low IMDB ",
+          strong("1)"), "Does high IMDB score means the movie is good and low IMDB ",
           "score means the movie is bad? We will look at the relationship ",
           "between the IMDB score of the movie and the profit of the movie."
         ),
         p(
-          "2) What types of movies are most popular? We will look at the ",
+          strong("2)"), "What types of movies are most popular? We will look at the ",
           "relationship between the movie genres and the number of movies of",
           "each genre produced."
         ),
         p(
-          "3) What do people like to see in movies? We will look at the ",
+          strong("3)"), "What do people like to see in movies? We will look at the ",
           "relationship between the key words associated with a movie and ",
           "the number of likes garnered by the film in several categories ",
           "online."
