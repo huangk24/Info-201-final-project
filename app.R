@@ -23,6 +23,7 @@ server <- function(input, output, session) {
       updateCheckboxGroupInput(session, "genre_vector", selected = "")
     }
   })
+  output$q3 <- renderPlot(q3_plot(input$review))
 }
 
 shinyApp(ui = ui, server = server)
