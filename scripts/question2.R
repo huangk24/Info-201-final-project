@@ -1,5 +1,8 @@
 load("movie_data.Rda")
 
+# answer question 2 specified in the project description. q2_plot returns a
+# plot for visualization and q2_ui stores a tab panel. 
+
 q2_plot <- function(genre_vector, year_range) {
   df <- select(movie_data, title_year, genres) %>%
     filter(genres != "" & title_year != "") %>%

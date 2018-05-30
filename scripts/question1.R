@@ -3,6 +3,9 @@ library(plotly)
 
 load("./movie_data.Rda")
 
+# answer question 1 specified in the project description. q1_plot returns a
+# plot for visualization and q1_ui stores a tab panel. 
+
 q1_ui <- tabPanel(
   "Profit & IMDB Score",
   tags$div(
