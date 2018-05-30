@@ -4,6 +4,9 @@ load("movie_data.Rda")
 # plot for visualization and q2_ui stores a tab panel.
 
 q2_plot <- function(genre_vector, year_range) {
+  my_theme <- theme(plot.title = element_text(family = "Helvetica", face ="bold", size = (17), hjust = .5),
+                    legend.title = element_text(family = "Helvetica", face = "italic", size = (12), color = "steelblue4"),
+                    axis.title = element_text(family = "Helvetica", size = (14), color = "steelblue4"))
   df <- select(movie_data, title_year, genres) %>%
     filter(genres != "" & title_year != "") %>%
     mutate(title_year = as.integer(title_year)) %>%
@@ -15,6 +18,7 @@ q2_plot <- function(genre_vector, year_range) {
     filter(Genres %in% genre_vector)
   ggplot(df) +
     geom_bar(stat = "identity", mapping = aes(x = Genres, y = Count)) +
+    my_theme+
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 }
 

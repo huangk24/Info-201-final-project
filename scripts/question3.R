@@ -33,8 +33,10 @@ q3_ui <- tabPanel(
 )
 
 q3_plot <- function(review, color_choice) {
-  my_theme <- theme(plot.title = element_text(family = "Helvetica", face ="bold", size = (17), hjust = .5),
-                 legend.title = element_text(family = "Helvetica", face = "italic", size = (12), color = "steelblue4"),
+  my_theme <- theme(plot.title = element_text(family = "Helvetica", face ="bold", 
+                                              size = (17), hjust = .5),
+                 legend.title = element_text(family = "Helvetica", face = "italic", 
+                                             size = (12), color = "steelblue4"),
                  axis.title = element_text(family = "Helvetica", size = (14), color = "steelblue4"))
   df <- movie_data %>%
     select("num_critics" = num_critic_for_reviews, "reviews" = review, "color" = color_choice)
