@@ -27,9 +27,10 @@ q2_ui <- tabPanel("Movies by Genre",
                          "last 100 years are produced in the last 30 years.")),
   sidebarLayout(
     sidebarPanel(
-      checkboxGroupInput("genre_vector", "Genre", choices = genres, inline = T),
+      checkboxGroupInput("genre_vector", "Genre", choices = genres, inline = T,
+                        selected = c("Action", "Comedy", "Drama", "Thriller")),
       sliderInput("year_range", "Production Year", min = 1916, max = 2016,
-                  step = 10, value = c(1916, 2016), sep = ""),
+                  step = 10, value = c(1986, 2016), sep = ""),
       actionButton("uncheck", "Reset")
     ),
     mainPanel(plotOutput("q2"))
