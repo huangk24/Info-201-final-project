@@ -62,7 +62,7 @@ ui <- navbarPage(
           tags$hr()
         )
       )
-  ), q1_ui, q2_ui)
+  ), q1_ui, q2_ui, q3_ui)
 
 server <- function(input, output, session) {
   output$q1 <- renderPlotly(q1_plot(input$color, input$rating, input$num_voted))
@@ -72,6 +72,7 @@ server <- function(input, output, session) {
       updateCheckboxGroupInput(session, "genre_vector", selected = "")
     }
   })
+  output$q3 - renderPlotly(q3_plot(input$review))
 }
 
 shinyApp(ui = ui, server = server)
