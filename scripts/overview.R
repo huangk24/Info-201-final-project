@@ -1,16 +1,20 @@
 # overview and introduction of our shiny app
-
 overview <-
   tabPanel(
+    # assign title to page
     "Project Description",
     mainPanel(
+      # placing divide in text for style
       tags$div(
+        # source to style sheet
         tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
         h2("Project Overview"),
         p("Group members: Haley Buls, Kai Huang, Yuxuan Lu"),
         tags$hr()
       ),
+      # placing divide in text for style
       tags$div(
+        # writing text for project description
         h3("The Data"),
         p(
           "For our project, we are using the ",
