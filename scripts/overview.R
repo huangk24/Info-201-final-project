@@ -30,13 +30,14 @@ overview <-
         p(
           "Our target audience includes interested movie goers and ",
           "television watchers. The target audience we will hone in on is ",
-          "primarily a user that is familiar with the Imdb website, the ",
-          "site from which the data base was collected. They will be ",
+          "primarily a user that is familiar with the Imdb ", 
+           em("(Internet Movie Data Base)"),
+          "website, the site from which the data base was collected. They will be ",
           "familiar not only with the content analyzed (movies and ",
           "television), but with further information on the ",
           "production and reception of media, such as the number of critical ",
           "reviews a movie earns, and typical features on the Imdb website ",
-          "such as ", em("Imdb Score"), ". To explore the site for yourself, ",
+          "such as ", strong("Imdb Score"), ". To explore the site for yourself, ",
           "visit ", tags$a(href = "https://www.imdb.com/", "Imdb.com"), "."
         ),
         tags$hr(),
@@ -65,3 +66,4 @@ overview <-
       )
     )
   )
+
