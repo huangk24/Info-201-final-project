@@ -6,9 +6,12 @@ load("movie_data.Rda")
 q2_plot <- function(genre_vector, year_range) {
   # assign theme for plot
   my_theme <- theme(
-    plot.title = element_text(family = "Helvetica", face = "bold", size = (17), hjust = .5),
-    legend.title = element_text(family = "Helvetica", face = "italic", size = (12), color = "steelblue4"),
-    axis.title = element_text(family = "Helvetica", size = (14), color = "steelblue4")
+    plot.title = element_text(family = "Helvetica", face = "bold", size = (17),
+                              hjust = .5),
+    legend.title = element_text(family = "Helvetica", face = "italic",
+                                size = (12), color = "steelblue4"),
+    axis.title = element_text(family = "Helvetica", size = (14),
+                              color = "steelblue4")
   )
   # filter data by user input
   df <- select(movie_data, title_year, genres) %>%

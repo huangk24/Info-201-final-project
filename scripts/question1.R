@@ -61,8 +61,10 @@ q1_plot <- function(color_selected, rating, num_voted) {
   d <- plot_ly(data = profit_imdb, x = ~ imdb_score, y = ~ profit) %>%
     layout(
       title = "Imdb Score v. Profit from Movie", face = "bold",
-      xaxis = list(title = "Imdb Score", family = "Helvetica", size = "14", color = "steelblue"),
-      yaxis = list(title = "Profit", family = "Helvetica", size = "14", color = "steelblue")
+      xaxis = list(title = "Imdb Score", family = "Helvetica", size = "14",
+                   color = "steelblue"),
+      yaxis = list(title = "Profit", family = "Helvetica", size = "14",
+                   color = "steelblue")
     )
   # return plot
   d
