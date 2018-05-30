@@ -18,16 +18,13 @@ ui <- navbarPage(
   "Movie Analysis",
   overview, q1_ui, q2_ui, q3_ui
 )
-
 # shiny ui and server. code for individual questions are in scripts folder.
-
 # set up page menu in ui
 ui <- navbarPage(
   theme = shinytheme("flatly"), "Movie Analysis",
   # calling in ui from files for each page
   overview, q1_ui, q2_ui, q3_ui
 )
-
 # build server
 server <- function(input, output, session) {
   # assigning plots to outputs, one from each page with input
