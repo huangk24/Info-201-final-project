@@ -25,6 +25,7 @@ overview <-
           "genres, budgets, profits and so on. Yuxuan collected this data ",
           "after a search online and brought it to the database."
         ),
+        tags$hr(),
         h3("Our Users"),
         p(
           "Our target audience includes interested movie goers and ",
@@ -38,6 +39,7 @@ overview <-
           "such as ", em("Imdb Score"), ". To explore the site for yourself, ",
           "visit ", tags$a(href = "https://www.imdb.com/", "Imdb.com"), "."
         ),
+        tags$hr(),
         h3(
           "Three questions we intend to answer for our users:"
         ),
