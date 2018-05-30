@@ -16,7 +16,7 @@ q3_ui <- tabPanel(
     ),
     mainPanel(
       plotOutput("q3"),
-        p("blah")# TODO: description, graph title, code style
+        p("blahf")# TODO: description, graph title, code style, publish the website and submit assignment
       )
     )
   )
