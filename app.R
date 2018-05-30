@@ -6,6 +6,7 @@ library(shinythemes)
 load("movie_data.Rda")
 source("./scripts/question1.R")
 source("./scripts/question2.R")
+source("./scripts/question3.R")
 
 ui <- navbarPage(
   theme = shinytheme("flatly"),
@@ -72,7 +73,7 @@ server <- function(input, output, session) {
       updateCheckboxGroupInput(session, "genre_vector", selected = "")
     }
   })
-  output$q3 - renderPlotly(q3_plot(input$review))
+  output$q3 <- renderPlot(q3_plot(input$review))
 }
 
 shinyApp(ui = ui, server = server)

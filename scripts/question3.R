@@ -7,12 +7,12 @@ q3_ui <- tabPanel(
   sidebarLayout(
     sidebarPanel(
       selectInput("review",
-                  label = "Review",
-                  choices = c("num_voted_users", "num_critic_for_reviews")
+                  label = "review",
+                  choices = c("num_voted_users", "num_user_for_reviews")
       )
     ),
     mainPanel(
-      plotlyOutput("q3"),
+      plotOutput("q3"),
         p(
           "From the scatter plot above we can tell there is ",
           strong("NO"), " real relationship between the IMDB score and",
@@ -26,13 +26,15 @@ q3_ui <- tabPanel(
   )
 
 q3_plot <- function(review) {
-  review <- review
-  review_imdb <- movie_data %>%
-    select(budget, review)
-  p <- plot_ly(data = review_imdb, x = ~ budget, y = ~ review)
-  p
+imdb <- movie_data %>% 
+  select(num_critic_for_reviews, !!review)
+p <- ggplot(data = imdb) +
+geom_point(mapping = aes(x = num_critic_for_reviews, y = review))
+
+  return(p)
 }
 
+ggplot(data = movie_data) +
+  geom_point(mapping = aes(x = num_critic_for_reviews, y = num_voted_users))
 
-ggplot(data = movie_data_new) +
-  geom_point(mapping = aes(x = movie_data$title_year, y = movie_data$gross))
+
