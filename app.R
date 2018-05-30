@@ -6,6 +6,7 @@ library(shinythemes)
 load("movie_data.Rda")
 source("./scripts/question1.R")
 source("./scripts/question2.R")
+source("./scripts/question3.R")
 
 ui <- navbarPage(
   theme = shinytheme("flatly"),
@@ -62,11 +63,12 @@ ui <- navbarPage(
           tags$hr()
         )
       )
-  ), q1_ui, q2_ui)
+  ), q1_ui, q2_ui, q3_ui)
 
 server <- function(input, output, session) {
   output$q1 <- renderPlotly(q1_plot(input$color, input$rating, input$num_voted))
   output$q2 <- renderPlot(q2_plot(input$genre_vector, input$year_range))
+  output$q3 <- renderPlot(q3_plot(input$review))
   observe({
     if (input$uncheck > 0) {
       updateCheckboxGroupInput(session, "genre_vector", selected = "")
