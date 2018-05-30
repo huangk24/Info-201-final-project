@@ -5,8 +5,8 @@ account: yuxuan-bill
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 350965
-bundleId: 1399759
+bundleId: 1401230
 url: https://yuxuan-bill.shinyapps.io/Info-201-final-project/
-when: 1527660923.27496
+when: 1527709649.57475
 asMultiple: FALSE
 asStatic: FALSE
