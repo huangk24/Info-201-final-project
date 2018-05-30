@@ -38,7 +38,6 @@ q3_ui <- tabPanel(
     )
   )
 )
-
 # build plot
 q3_plot <- function(review, color_choice) {
   # assign theme
