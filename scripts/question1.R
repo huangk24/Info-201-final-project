@@ -9,8 +9,13 @@ q1_ui <- tabPanel(
   "Profit & Imdb Score",
   tags$div(
     class = "header1",
-    tags$blockquote("Does Imdb score has relationship with the profit of the
-                  movie?")
+    tags$blockquote(
+      "From the scatter plot below we can tell there is ", strong("NO"),
+      " real relationship between the IMDB score and profit. However, we can ",
+      "conclude that the movie with low IMDB score does have less profit. We ",
+      "can also conclude that Black and White movies are generally make less ",
+      "profit compare to Color movies."
+    )
   ),
   # build widgets for user to select input
   sidebarLayout(
@@ -33,17 +38,7 @@ q1_ui <- tabPanel(
     mainPanel(
       plotlyOutput("q1"),
       tags$div(
-        tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
-        tags$hr(),
-        class = "summary",
-        p(
-          "From the scatter plot above we can tell there is ",
-          strong("NO"), " real relationship between the IMDB score and",
-          "profit. However, we can conclude that the movie with low ",
-          "IMDB score does have less profit. We can also conclude that Black ",
-          "and White movies are generally make less profit compare to Color ",
-          "movies."
-        )
+        tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
       )
     )
   )
