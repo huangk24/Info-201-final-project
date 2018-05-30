@@ -22,7 +22,7 @@ ui <- navbarPage(
         tags$hr()
       ),
       tags$div(
-        h3("Project Description"),
+        h1("Project Description"),
         p(
           "For our project, we are using the ",
           strong("IMDB 5000 Movie Dataset"), " we found on ",
@@ -42,8 +42,7 @@ ui <- navbarPage(
           "production and reception of media, such as the number of critical",
           "reviews a movie earns."
         ),
-        h2("Areas of Interest"),
-        h1("Three questions we intend to answer for our users:"),
+        p("Three questions we intend to answer for our users:"),
         p(
           strong("1)"), "Does high IMDB score means the movie is good and low IMDB ",
           "score means the movie is bad? We will look at the relationship ",

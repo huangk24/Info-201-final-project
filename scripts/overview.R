@@ -7,11 +7,11 @@ overview <-
       tags$div(
         tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
         h2("Project Overview"),
-        p("Group member: Haley Buls, Kai Huang, Yuxuan Lu"),
+        p("Group members: Haley Buls, Kai Huang, Yuxuan Lu"),
         tags$hr()
       ),
       tags$div(
-        h3("Project Description"),
+        h3("The Data"),
         p(
           "For our project, we are using the ",
           strong("IMDB 5000 Movie Dataset"), " we found on ",
@@ -21,6 +21,7 @@ overview <-
           " budgets, profits and so on. Yuxuan collected this data after a ",
           "search online and brought it to the database."
         ),
+        h3("Our Users"),
         p(
           "Our target audience includes interested movie goers and ",
           "television watchers. The target audience we will hone in on is ",
@@ -33,21 +34,21 @@ overview <-
           em("Imdb Score"), ". To explore the site for yourself, visit ",
           tags$a(href = "https://www.imdb.com/", "Imdb.com"), "."
         ),
-        p(
+        h3(
           "Three questions we intend to answer for our users:"
         ),
         p(
-          "1) Does a high Imdb score mean the movie is good and a low Imdb ",
+          strong("1)"), "Does a high Imdb score mean the movie is good and a low Imdb ",
           "score means the movie is bad? We will look at the relationship ",
           "between the Imdb score and profit of the movie."
         ),
         p(
-          "2) What types of movies are most popular? We will look at the ",
+          strong("2)"), "What types of movies are most popular? We will look at the ",
           "relationship between movie genres and the number of movies of",
           "each genre produced."
         ),
         p(
-          "3) Can critics make a movie more poular? We will look at the ",
+          strong("3)"), "Can critics make a movie more poular? We will look at the ",
           "relationship between the number of critical reviews a movie has and ",
           "how popular that film is with Imdb users on the site."
         ),
