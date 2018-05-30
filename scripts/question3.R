@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(shiny)
 load("./movie_data.Rda")
 
 # answer question 3 specified in the project description. q3_plot returns a
@@ -9,8 +10,8 @@ q3_ui <- tabPanel(
   "Critical Reception and Popularity",
   tags$blockquote(paste0(
     "The more attention a movie is given by critics correlates to how popular a movie is with Imdb users. ",
-    "Imdb users are ", em("more likely"), "to",  strong("leave a review"), strong("rank a movie"), "or ",
-    strong("positively rank movies"), "with a large critical reception. In addition to this, movies with ",
+    "Imdb users are more likely to leave a review rank a movie or ",
+    "positively rank movies with a large critical reception. In addition to this, movies with ",
     "a PG rating recieve more reviews from critics and are more popular with users as well. Click through ",
     "to see how critical attention is correlated with different types of movies too.")),
   sidebarLayout(

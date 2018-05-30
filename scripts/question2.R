@@ -19,6 +19,7 @@ q2_plot <- function(genre_vector, year_range) {
   ggplot(df) +
     geom_bar(stat = "identity", mapping = aes(x = Genres, y = Count)) +
     my_theme+
+    ggtitle("Movie Genres  v. Count")+
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 }
 
